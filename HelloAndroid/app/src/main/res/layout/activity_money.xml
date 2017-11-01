@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="janie.helloandroid.MoneyActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:padding="16dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Money Converter"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/toUSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VND -> USD"
+                android:onClick="toUSD"
+                tools:layout_editor_absoluteX="95dp" />
+            <Button
+                android:id="@+id/toVND"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USD -> VND"
+                android:onClick="toVND" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

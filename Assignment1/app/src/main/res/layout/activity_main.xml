@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="janie.assignment1.MainActivity">
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pink"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CARD GENERATOR"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_purple"
+                android:layout_marginTop="120dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose a type"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="40dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp">
+
+                    <ImageButton
+                        android:id="@+id/birthday"
+                        android:background="@android:color/transparent"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/birthday"
+                        android:onClick="setBirthday"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Birthday Card"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageButton
+                        android:id="@+id/party"
+                        android:background="@android:color/transparent"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/party"
+                        android:onClick="setParty"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Party Invitation"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
