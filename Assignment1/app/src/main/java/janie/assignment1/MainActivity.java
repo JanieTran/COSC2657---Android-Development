@@ -3,6 +3,7 @@ package janie.assignment1;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Log.i(".MainActivity", "Application started");
     }
 
     public void setBirthday(View view) {
@@ -19,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setParty(View view) {
-        Intent intent = new Intent(this, toParty.class);
+        Intent intent = new Intent(this, TimeParty.class);
         startActivity(intent);
     }
 }

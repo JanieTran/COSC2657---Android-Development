@@ -3,6 +3,7 @@ package janie.assignment1;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 public class Birthday extends AppCompatActivity {
@@ -17,10 +18,12 @@ public class Birthday extends AppCompatActivity {
         String sender = Extra.getStringExtra("Name");
         String message = Extra.getStringExtra("Message");
 
-        TextView messageDisplay = (TextView) findViewById(R.id.message);
-        TextView nameDisplay = (TextView) findViewById(R.id.sender);
+        TextView messageDisplay = findViewById(R.id.message);
+        TextView nameDisplay = findViewById(R.id.sender);
 
         messageDisplay.setText(message);
         nameDisplay.setText("From " + sender);
+
+        Log.i(".Birthday", "Card generated successfully");
     }
 }

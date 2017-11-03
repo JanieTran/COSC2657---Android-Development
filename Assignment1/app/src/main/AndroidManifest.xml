@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -19,22 +18,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".toBirthday"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.ActionBar.Transparent" />
-
-        <activity
-            android:name=".toParty"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.ActionBar.Transparent" />
-
         <activity
             android:name=".Birthday"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.ActionBar.Transparent"/>
-
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".TimeParty"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".DateParty"
+            android:parentActivityName=".TimeParty"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".Party"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.ActionBar.Transparent"></activity>
     </application>
 
 </manifest>
