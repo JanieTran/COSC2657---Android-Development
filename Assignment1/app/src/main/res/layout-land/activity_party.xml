@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="100dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp">
@@ -41,8 +41,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp">
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
 
                 <TextView
                     android:layout_width="0dp"
@@ -57,7 +57,7 @@
                     android:id="@+id/partyTime"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:text="Time"
                     android:textSize="25dp"/>
 
@@ -67,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="5dp">
 
                 <TextView
                     android:layout_width="0dp"
@@ -82,7 +82,7 @@
                     android:id="@+id/partyDate"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:text="Date"
                     android:textSize="25dp"/>
 
@@ -106,7 +106,7 @@
                     android:id="@+id/partyLoc"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:text="Location"
                     android:textSize="25dp"/>
 
@@ -121,7 +121,7 @@
                 android:textStyle="bold"
                 android:textSize="25dp"
                 android:fontFamily="sans-serif-smallcaps"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
 
     </FrameLayout>

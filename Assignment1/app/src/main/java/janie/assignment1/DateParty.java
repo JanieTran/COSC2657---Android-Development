@@ -20,12 +20,17 @@ public class DateParty extends AppCompatActivity {
 
     public void setDate(View view) {
         DatePicker dateInput = findViewById(R.id.datePicker);
-        String date = dateInput.toString();
+
+        String day = String.valueOf(dateInput.getDayOfMonth());
+        String month = String.valueOf(dateInput.getMonth());
+        String year = String.valueOf(dateInput.getYear());
+
+        String date = day + "/" + month + "/" + year;
 
         Intent timeIntent = getIntent();
         String time = timeIntent.getStringExtra("Time");
 
-        Intent intent = new Intent(this, Party.class);
+        Intent intent = new Intent(this, Location.class);
         intent.putExtra("Time", time);
         intent.putExtra("Date", date);
         startActivity(intent);

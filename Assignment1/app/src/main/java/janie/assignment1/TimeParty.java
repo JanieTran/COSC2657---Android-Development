@@ -17,7 +17,10 @@ public class TimeParty extends AppCompatActivity {
 
     public void setTime(View view) {
         TimePicker timeInput = findViewById(R.id.timePicker);
-        String time = timeInput.toString();
+
+        String hour = String.valueOf(timeInput.getCurrentHour());
+        String min = String.valueOf(timeInput.getCurrentMinute());
+        String time = hour + ":" + min;
 
         Intent intent = new Intent(this, DateParty.class);
         intent.putExtra("Time", time);

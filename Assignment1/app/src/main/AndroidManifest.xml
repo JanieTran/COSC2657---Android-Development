@@ -29,7 +29,8 @@
         <activity
             android:name=".TimeParty"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.ActionBar.Transparent" />
+            android:theme="@style/AppTheme.ActionBar.Transparent"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".DateParty"
             android:parentActivityName=".TimeParty"
@@ -37,7 +38,11 @@
         <activity
             android:name=".Party"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.ActionBar.Transparent"></activity>
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".Location"
+            android:parentActivityName=".DateParty"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
     </application>
 
 </manifest>
