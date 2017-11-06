@@ -59,15 +59,30 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="40dp" >
 
-                <ProgressBar
-                    style="?android:attr/progressBarStyleHorizontal"
+                <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:progress="100"
-                    android:progressTint="@android:color/holo_purple"
-                    android:layout_marginRight="10dp"
-                    android:layout_gravity="center_vertical"/>
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3 out of 3 stages"
+                        android:textColor="@android:color/holo_purple"
+                        android:textSize="15sp"
+                        android:textAlignment="center"/>
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="100"
+                        android:progressTint="@android:color/holo_purple"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
 
                 <Button
                     android:layout_width="0dp"

@@ -26,4 +26,40 @@ public class Birthday extends AppCompatActivity {
 
         Log.i(".Birthday", "Card generated successfully");
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i(".Birthday", "Birthday card started");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i(".Birthday", "Birthday card paused");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i(".Birthday", "Birthday card resumed");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i(".Birthday", "Birthday card stopped");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.i(".Birthday", "Birthday card restarted");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i(".Birthday", "Birthday card destroyed");
+    }
 }

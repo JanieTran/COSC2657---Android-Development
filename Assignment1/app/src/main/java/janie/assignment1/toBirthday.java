@@ -19,6 +19,42 @@ public class toBirthday extends AppCompatActivity {
         Log.i(".toBirthday", "Birthday card chosen.");
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i(".toBirthday", "Birthday card customisation started");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i(".toBirthday", "Birthday card customisation paused");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i(".toBirthday", "Birthday card customisation resumed");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i(".toBirthday", "Birthday card customisation stopped");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.i(".toBirthday", "Birthday card customisation restarted");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i(".toBirthday", "Birthday card customisation destroyed");
+    }
+
     public void Birthday(View view) {
         EditText nameInput = findViewById(R.id.sender);
         sender = nameInput.getText().toString();

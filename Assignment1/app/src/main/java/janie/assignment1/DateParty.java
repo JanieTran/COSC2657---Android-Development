@@ -18,6 +18,42 @@ public class DateParty extends AppCompatActivity {
         Log.i(".DateParty", "Entering Set date");
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i(".DateParty", "Party date customisation started");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.i(".DateParty", "Party date customisation restarted");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i(".DateParty", "Party date customisation paused");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i(".DateParty", "Party date customisation resumed");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i(".DateParty", "Party date customisation stopped");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i(".DateParty", "Party date customisation destroyed");
+    }
+
     public void setDate(View view) {
         DatePicker dateInput = findViewById(R.id.datePicker);
 
